@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ultra&display=swap');
+
+body {
+    font-family: 'montserrat', sans-serif, Arial, Helvetica;
+    color: white;
+    margin: 0;
+}
+.cabecalho{
+   display: flex;
+    align-items: center;
+    background-color: #911C03;
+    }
+nav a{
+    
+    color: black;
+    font-size: 20px
+}
+.textopizzaria{
+    color: white;
+    width: 200px;
+    margin-top: -15px;
+}
+.logopizzaria{
+    margin-left: 600px;
+}
+.rodape{
+    height:500px;
+    background-color: #211E1E
+}
