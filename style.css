@@ -35,28 +35,37 @@ nav a{
 .Titulomenu{
     color: black;
 }
-.produtos{
+.produtos{ /*TODOS OS CARDS JUNTOS*/
     display: flex;
     justify-content: start;
-    padding: 200px;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 40px;
     
 }
-.cardpizza{
+.cardpizza{ /*CARD INDIVIDUAL DE CADA PIZZA*/
+    width: 300px;
+    
     padding: 20px;
     border-radius: 15px;
     text-align: center;
     background-color: #DBDBDB;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.cardpizza img {
+.cardpizza img { /*IMAGEM INDIVIDUAL DE CADA CARD*/
     border-radius: 20px;
     width: 300px;
+    object-fit: cover;
 }
-.cardpizza h2{
+.cardpizza h2{ /*TEXTO INDIVIDUAL DE CADA CARD*/
     color: red;
     font-family:'montserrat';
     font-size: 25px;
     font-weight: bold;
-    line-height: 10px;
+    line-height: 30px;
 }
 .logopizzaria{
     margin-left: 600px;
