@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 /*Style Body do site*/
 body {
@@ -21,7 +22,6 @@ body::before {
     margin-left: 600px;
 }
 
-
 .segundotitulo{
     color: black;
     text-align: center;
@@ -29,13 +29,54 @@ body::before {
     padding-top: 50px;
 }
 
+main {
+    padding: 50px;
+    margin-top: 180px;
+}
+
+
+.descricao {
+    color: rgb(212, 38, 0);
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+    margin: 0;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.titulo h1 {
+    color: black;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
 
 /*Style Cabeçalho do site/Menu do site*/
 .cabecalho{
     background-color: #911C03;
     display: flex; 
-    align-items:center; /*Alinha Verticalmente*/
+    align-items: center; /*Alinha Verticalmente*/
     justify-content: center ; /*Alinha Horizontalmente*/
+    position: fixed;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 nav a{
     font-weight: bold;
@@ -91,3 +132,398 @@ nav a{
     height:500px;
     background-color: #211E1E;
 }
+
+
+
+
+/* ===================================================== */
+/* CSS PRA MEXER NOS ELEMENTOS MAIS USADOS               */
+/* ===================================================== */
+
+
+/* ===================================================== */
+/* CENTRALIZAR TEXTO                                     */
+/* ===================================================== */
+
+/*h1 {
+    text-align: center;
+}
+
+/*
+text-align -> alinha texto
+
+left = esquerda
+center = centro
+right = direita
+*/
+
+
+/* ===================================================== */
+/* MEXER O TEXTO                                         */
+/* ===================================================== */
+
+/*p {
+    color: white;
+    font-size: 30px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+/*
+color -> cor do texto
+
+font-size -> tamanho da letra
+
+font-family -> muda a fonte
+
+font-weight -> grossura da letra
+bold = negrito
+*/
+
+
+/* ===================================================== */
+/* MUDAR FUNDO                                           */
+/* ===================================================== */
+
+/*body {
+    background-color: black;
+}
+
+/*
+background-color
+muda a cor do fundo
+*/
+
+
+/* ===================================================== */
+/* MEXER IMAGEM                                          */
+/* ===================================================== */
+
+/*img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+}
+
+/*
+width -> largura
+
+height -> altura
+
+auto -> mantém proporção
+
+border-radius -> arredonda imagem
+*/
+
+
+/* ===================================================== */
+/* EMPURRAR ELEMENTOS                                    */
+/* ===================================================== */
+
+/*img {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+/*
+margin-left
+empurra pra direita
+
+margin-top
+empurra pra baixo
+*/
+
+
+/* ===================================================== */
+/* ESPAÇO DENTRO DO ELEMENTO                             */
+/* ===================================================== */
+
+/*/div {
+    padding: 20px;
+}
+
+/*
+padding
+cria espaço interno
+*/
+
+
+/* ===================================================== */
+/* CRIAR CARD                                            */
+/* ===================================================== */
+
+/*.card {
+    background-color: gray;
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+}
+
+/*
+background-color -> fundo
+
+padding -> espaço interno
+
+border-radius -> arredonda
+
+width -> largura
+*/
+
+
+/* ===================================================== */
+/* JUNTAR ELEMENTOS LADO A LADO                          */
+/* ===================================================== */
+
+/*.container {
+    display: flex;
+}
+
+/*
+display: flex
+coloca os elementos lado a lado
+*/
+
+
+/* ===================================================== */
+/* CENTRALIZAR ELEMENTOS                                 */
+/* ===================================================== */
+
+/*.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+justify-content
+alinha horizontalmente
+
+align-items
+alinha verticalmente
+*/
+
+
+/* ===================================================== */
+/* DAR ESPAÇO ENTRE ELEMENTOS                            */
+/* ===================================================== */
+
+/*.container {
+    display: flex;
+    gap: 20px;
+}
+
+/*
+gap
+espaço entre elementos
+*/
+
+
+/* ===================================================== */
+/* FAZER QUEBRAR LINHA                                   */
+/* ===================================================== */
+
+/*.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*
+flex-wrap: wrap
+faz quebrar linha
+quando faltar espaço
+*/
+
+
+/* ===================================================== */
+/* DEIXAR IMAGEM E TEXTO UM EMBAIXO DO OUTRO             */
+/* ===================================================== */
+
+/*.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*
+flex-direction: column
+organiza verticalmente
+
+align-items: center
+centraliza
+*/
+
+
+/* ===================================================== */
+/* MEXER NA POSIÇÃO                                      */
+/* ===================================================== */
+
+/*.logo {
+    position: relative;
+    left: 50px;
+    top: 20px;
+}
+
+/*
+left
+move pra direita
+
+top
+move pra baixo
+*/
+
+
+/* ===================================================== */
+/* COLOCAR IMAGEM DE FUNDO                               */
+/* ===================================================== */
+
+/*body {
+    background-image: url("imagem.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/*
+background-image
+imagem de fundo
+
+cover
+faz preencher tudo
+
+center
+centraliza
+*/
+
+
+/* ===================================================== */
+/* DEIXAR FUNDO TRANSPARENTE                             */
+/* ===================================================== */
+
+/*body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("logo.png");
+    opacity: 0.1;
+}
+
+/*
+opacity
+transparência
+
+0.1 = quase invisível
+*/
+
+
+/* ===================================================== */
+/* TIRAR LINHA DO LINK                                   */
+/* ===================================================== */
+
+/*a {
+    text-decoration: none;
+}
+
+/*
+remove sublinhado
+*/
+
+
+/* ===================================================== */
+/* MUDAR COR QUANDO PASSA O MOUSE                        */
+/* ===================================================== */
+
+/*a:hover {
+    color: red;
+}
+
+/*
+:hover
+ativa quando passa mouse
+*/
+
+
+/* ===================================================== */
+/* ANIMAÇÃO SUAVE                                        */
+/* ===================================================== */
+
+/*a {
+    transition: 0.3s;
+}
+
+/*
+deixa mudança suave
+*/
+
+
+/* ===================================================== */
+/* SOMBRA                                                */
+/* ===================================================== */
+
+/*.card {
+    box-shadow: 0px 0px 15px black;
+}
+
+/*
+sombra do elemento
+*/
+
+
+/* ===================================================== */
+/* ESCONDER ELEMENTO                                     */
+/* ===================================================== */
+
+/*.menu {
+    display: none;
+}
+
+/*
+none
+esconde elemento
+*/
+
+
+/* ===================================================== */
+/* OCUPAR TELA INTEIRA                                   */
+/* ===================================================== */
+
+/*section {
+    height: 100vh;
+}
+
+/*
+100vh
+100% da altura da tela
+*/
+
+
+/* ===================================================== */
+/* DEIXAR RESPONSIVO                                     */
+/* ===================================================== */
+
+/*img {
+    max-width: 100%;
+}
+
+/*
+imagem nunca passa do tamanho da tela
+*/
+
+
+/* ===================================================== */
+/* CLASSES E IDS                                         */
+/* ===================================================== */
+
+/*
+.classe
+serve pra vários elementos
+
+#id
+serve pra um único elemento
+*/
+
+/*.card {
+    background-color: gray;
+}
+
+#titulo {
+    color: red;
+}*/

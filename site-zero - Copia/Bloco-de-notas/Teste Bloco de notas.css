@@ -1,0 +1,88 @@
+body {
+    background-color: rgb(255, 251, 0);
+}
+
+h1 {
+    color: rgb(255, 178, 34);
+    font-size: 80px;
+}
+
+.center {
+    text-align: center;
+}
+
+/* TAG CORINGA */
+* {
+    padding: 20px;
+}
+
+.background {
+    background-image: url("../imagens_site/Editados/Fachada.png");
+    background-size: cover;
+    height: 900px;
+}
+
+.criar {
+    border: 1px solid black;
+    border-radius: 20px;
+    background: #000000;
+    color: #ffffff;
+}
+
+.criar:hover {
+    background: #ffffff;
+    color: black;
+}
+
+.entrar {
+    border: 1px solid black;
+    border-radius: 20px;
+    background: #ffffff;
+    color: #000000;
+}
+
+.entrar:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
+/* Paleta de Cores Logo Mel
+
+    CSS HEX
+--yellow-sea: #fbab04;
+--chelsea-gem: #986404;
+--saffron-mango: #fabf5a;
+--yellow-orange: #fbb438;
+--pirate-gold: #bc7c04;
+--pirate-gold: #b47c04;
+--pirate-gold: #cb8804;
+--my-sin: #fcb422;
+--tangerine: #e09604;
+--buddha-gold: #d49404;
+
+
+    SCSS HEX
+$yellow-sea: #fbab04;
+$chelsea-gem: #986404;
+$saffron-mango: #fabf5a;
+$yellow-orange: #fbb438;
+$pirate-gold: #bc7c04;
+$pirate-gold: #b47c04;
+$pirate-gold: #cb8804;
+$my-sin: #fcb422;
+$tangerine: #e09604;
+$buddha-gold: #d49404;
+
+
+    SCSS RGB
+--yellow-sea: rgba(251,171,4,1);
+--chelsea-gem: rgba(152,100,4,1);
+--saffron-mango: rgba(250,191,90,1);
+--yellow-orange: rgba(251,180,56,1);
+--pirate-gold: rgba(188,124,4,1);
+--pirate-gold: rgba(180,124,4,1);
+--pirate-gold: rgba(203,136,4,1);
+--my-sin: rgba(252,180,34,1);
+--tangerine: rgba(224,150,4,1);
+--buddha-gold: rgba(212,148,4,1);
+*/

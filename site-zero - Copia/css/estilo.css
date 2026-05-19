@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=DynaPuff:wght@400..700&display=swap');
+
+.fonte01 {
+    font-family: "Borel", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    height: 125px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 90%;
+    /* border: 1px solid red; */
+    margin-left: 22%;
+}
+
+.logo {
+    display: flex;
+    flex-flow: row wrap;
+    height: 125px;
+    background: white;
+    /* border: 1px solid red; */
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 20%;
+    margin-left: 2%;
+}
+
+.nome-loja {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 20%;
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-left: 30%;
+    height: 70px;
+}
+
+.nome-loja h1 {
+    color: #fbab04;
+    font-family: "Borel", serif;
+}
+
+.menu {
+    flex: 70%;
+    /* border: 1px solid red; */
+    text-align: center;
+    padding: 11px;
+    margin-right: 15%;
+}
+
+.menu a {
+    color: #d49404;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 16px;
+}
+
+.menu a:hover {
+    color: #fcb422;
+    border-top: 4px solid #cb8804;
+}
+
+.entrar {
+    color: white;
+    margin-left: 7%;
+}
+
+#cadastre {
+    background: #d49404;
+    padding: 10px 25px;
+    color: white;
+    margin-right: 10%;
+    margin-left: 2%;
+    border-radius: 5px;
+}
+
+#cadastre:hover {
+    border: none;
+    background: #fbab04;
+}
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    /* background: gray; */
+    justify-content: center;
+    align-items: center;
+    padding-top: 125px;
+}
+
+.headline {
+    margin-left: 10%;
+    flex: 40%;
+    /* border: 1px solid black; */
+}
+
+.headline h2 {
+    font-weight: 900;
+    font-size: 20px;
+    color: #fbab04;
+    margin: 0;
+}
+
+.headline p {
+    color: #fcb422;
+    text-align: left;
+}
+
+.contact-btn {
+    display: inline-block;
+    background: #d49404;
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+
+.contact-btn:hover {
+    background: #fbab04;
+}
+
+.img-headline {
+    margin-right: 10%;
+    flex: 40%;
+    /* border: 1px solid pink; */
+    text-align: center;
+}
+
+section {
+    display: inline-block;
+    margin-top: 80px;
+    /* border: 1px solid black; */
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    padding: 5%;
+}
+
+section h2 {
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    font-family: "Borel", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.servicos {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.card {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 8px;
+    border: 1px solid #d49404;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.texto-oculto {
+    display: none;
+}
+
+.card:hover {
+    background: #fbab04;
+    color: white;
+    padding: 40px;
+}
+
+.card:hover img {
+    display: none;
+}
+
+.card:hover .card-text {
+    display: none;
+}
+
+.card:hover .texto-oculto {
+    display: block;
+}
+
+footer {
+    margin-top: 100px;
+    height: 250px;
+    background-image: linear-gradient(180deg, #fbab04, #d49404, black);
+    text-align: center;
+    border-top: 5px solid #980404;
+
+}
+
+.logo-rodape {
+    padding: 30px;
+}
+
+.agencia {
+    color: white;
+    font-family: "Borel", serif;
+}
+
+.whatss {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 80px;
+}

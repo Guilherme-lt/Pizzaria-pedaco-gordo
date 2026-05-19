@@ -1,0 +1,152 @@
+Bloco De Notas
+
+<!DOCTYPE html> - Inicio do HTML
+
+<head></head> - A ''cabeça'' do site
+<title></title> Titulo do site
+
+<body></body> O ''corpo'' do site
+<h1></h1> - Primeiro Titulo (só se usa uma vez no site)
+<h2></h2> - Subtitulo ou outro Titulo
+<p></p> - Parágrafo
+<b></b> - Negrito
+<strong></strong> - Negrito (enfase)
+<i></i> - Italico
+<u></u> - Sublinhado
+<hr> - Linha divisória
+<br> - Pular uma linha (quebra de linha)
+<small></small> - Texto pequeno
+<del></del> - Riscado (deletado)
+<sup></sup> - Superior (ex: x elevado ao quadrado)
+<sub></sub> - Inferior
+<mark></mark> - Marcação (marcador de texto amarelo)
+<abbr title="Hyper text markup language">HTML</abbr> - Apreviatura de uma palavra
+<address></address> - Endereço (ex: email, endereço local, endereço de um site URL etc)
+<cite></cite> - Obra literaria (ex: livro, pessoa, organização etc)
+<q></q> - Citação curta
+<blockquote></blockquote> - Citação de uma parte do texto para dar mais destaque
+<bdo dir="rlt ou ltr"></bdo> - Texto invertido
+<!----> - Serve para fazer um comentário (atalho no teclado CTROL+K+C)
+
+<!-- LINK ABSOLUTO (URL ABSOLUTA) -->
+<a href="https://google.com">Ir para o Google</a> - Irá para um site na mesma aba
+<a href="https://google.com" target="_blank">Ir para o Google</a> - Irá para um site em outra aba
+
+<!-- LINK RELATIVO (Navegar pelas pastas) -->
+<a href="sobre.html">Sobre nós</a> - Irá para a página desejada
+<a href="exemplo/sobre.html"></a> - Irá para a página desejada dentro de outra pasta
+<a href="../sobre.html"></a> - Volta para a pasta anterior e acessa a página desejada
+
+<img src="Caminho da imagen" alt="Inclusão para pessoas cegas (o google dirá oque é a imagem)"> - width="Tamanho do
+comprimento da imagem (ex: 10 de comprimento)" height="Tamanho da largura da imagem (ex: 10 de largura)" site para
+editar imagem direto no google: photopea.com, site para pegar imagem de graça em alta qualidade: Pexels.com, site para
+comprimir uma imagen: easy-resize.com
+
+<table width="100%" border="1" style="text-align: center;"> - Criar tabelas com borda centralizadas
+    <tr>
+        <th></th> - Colunas principais
+        <td></td> - Outros dados
+    </tr>
+</table>
+
+<ul> - Lista não ordenada
+    <li></li> - Criar listas
+</ul>
+
+<ol> - Lista ordenada
+    <li></li> - Criar listas
+</ol>
+
+<iframe src="https//:youtube.com" width="10" height="10" frameborder="0"></iframe> - Adicionar uma página dentro de
+outra página
+
+<!--LEGENDA PARA NOME-->
+<label for="campo_nome">Nome:</label>
+
+<!--CAMPO INPUT DO TYPE TEXT-->
+<input id="campo_nome" type="text" placeholder="Digite seu nome aqui" required>
+
+
+<!--LEGENDA PARA EMAIL-->
+<label for="campo_email">Email:</label>
+
+<!-- CAMPO INPUT DO TYPE EMAIL-->
+<input id="campo_email" type="email" placeholder="Digite um email" required>
+
+
+<!--LEGENDA PARA SENHA-->
+<label for="campo_senha">Senha:</label>
+
+<!-- CAMPO INPUT DO TYPE PASSWORD-->
+<input id="campo_senha" type="password" placeholder="Digite uma senha" required>
+
+
+<!-- CAMPO SELECT-->
+<select name="cores">
+    <option selected disabled value="">Selecione uma cor</option>
+    <option value="vermelho">Vermelho</option>
+    <option value="azul">Azul</option>
+    <option value="amarelo">Amarelo</option>
+    <option value="verde">Verde</option>
+</select>
+
+<!-- CAMPO TEXTAREA-->
+<textarea required name="mensagem" placeholder="Digite aqui sua mensagem" rows="15" cols="55"></textarea>
+
+<!--TAG DE AUDIO-->
+<audio controls controlsList="nodownload">
+    <source src="audio/teste.mp3" type="audio/mpeg">
+</audio>
+
+&nbsp; - Serve para dar espaçamentos em palavras
+
+<!--TAG DE VIDEO-->
+<video poster="imagens_site/Fachada.png" width="100%" controls disablepictureinpicture controlsList="nodownload">
+    <source src="video/video-teste.mp4" type="video/mp4">
+</video>
+
+<!--TAG PARA SEPARAR BLOCOS-->
+<div></div> - São as divisórias do site em ''blocos''
+ex:
+
+<!--TAG SEMANTICA PARA O TOPO-->
+<header class="header">
+    <h1>Topo</h1>
+    <p>Aqui a parte do topo</p>
+</header>
+
+<!--TAG SEMANTICA PARA MENU-->
+<nav class="menu">
+    <a href="index.html">Link</a>
+    <a href="index.html">Link</a>
+    <a href="index.html">Link</a>
+    <a href="index.html">Link</a>
+</nav>
+
+<!--TAG SEMANTICA PARA SEÇÃO-->
+<section class="coluna-50">
+    <h2>Coluna</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nostrum officia ipsam architecto</p>
+</section>
+
+<!--TAG SEMANTICA PARA RODAPÉ-->
+<footer class="rodape">
+    <h2>Coluna</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nostrum officia ipsam architecto</p>
+</footer>
+
+
+<!-- LINK PARA INCORPORAR O CSS NO HTML -->
+
+<head>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<!-- TAG INLINE CSS DIRETO NO HTML -->
+<h1 style="color: aqua;">Cor aqua direto no html</h1>
+
+<!-- TAG PARA CENTRALIZAR -->
+<p class="center"></p> - Nunca pode começar com número, sempre com uma letra
+
+<!-- TAG DE IDENTIFICADOR -->
+<p id="teste"></p>
