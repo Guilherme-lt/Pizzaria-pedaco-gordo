@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ultra&display=swap');
 
+/*Style Body do site*/
 body {
     font-family: 'montserrat', sans-serif, Arial, Helvetica;
     color: white;
@@ -14,6 +15,22 @@ body::before {
     opacity: 0.03; /* deixa a imagem bem fraca (efeito marca d'água) */
     z-index: -1; /* joga para trás de todo o conteúdo */
 }
+
+.logopizzaria{
+    width: 200px;
+    margin-left: 600px;
+}
+
+
+.segundotitulo{
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+
+/*Style Cabeçalho do site/Menu do site*/
 .cabecalho{
     background-color: #911C03;
     display: flex; 
@@ -67,9 +84,9 @@ nav a{
     font-weight: bold;
     line-height: 30px;
 }
-.logopizzaria{
-    margin-left: 600px;
-}
+
+
+/*Style Rodapé do site*/
 .rodape{
     height:500px;
     background-color: #211E1E;
