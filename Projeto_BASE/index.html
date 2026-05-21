@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<!-- Define que o documento usa HTML5, que é a versão moderna do HTML. -->
+<html lang="pt-BR">
+<!-- O atributo lang informa ao navegador que o conteúdo está em português do Brasil. -->
+
+<head>
+  <!--
+    A tag <head> guarda informações sobre a página.
+    Essas informações normalmente não aparecem no corpo do site,
+    mas ajudam o navegador a entender como carregar o projeto.
+
+    Exemplos do que fica no <head>:
+    - charset: tipo de codificação dos caracteres;
+    - viewport: configuração para celular;
+    - title: nome da aba;
+    - link: conexão com arquivos externos, como CSS.
+  -->
+
+  <!-- Permite usar acentos, cedilha e outros caracteres especiais corretamente. -->
+  <meta charset="UTF-8" />
+
+  <!-- Faz o layout se adaptar ao tamanho da tela, principalmente em celulares. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Texto que aparece na aba do navegador. -->
+  <title>Big Fat Slice | Pizzaria</title>
+
+  <!-- Importa o arquivo CSS responsável pela aparência visual do site. -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!--
+    A tag <body> contém tudo que aparece visualmente na página:
+    cabeçalho, textos, imagens, botões, seções e rodapé.
+
+    Regra prática:
+    - HTML cria a estrutura.
+    - CSS deixa bonito.
+    - JavaScript adiciona interação.
+  -->
+
+  <!-- Cabeçalho fixo com logo e links de navegação. -->
+  <header class="topo">
+    <!--
+      class="topo" liga este cabeçalho ao seletor .topo no CSS.
+      Sempre que você vê class="alguma-coisa", procure no style.css por .alguma-coisa.
+      É assim que o HTML "conversa" com o CSS.
+    -->
+
+    <!-- Container usado para limitar a largura do conteúdo e organizar os itens. -->
+    <div class="cabecalho container">
+      <!--
+        Uma <div> é uma caixa genérica.
+        Ela não tem significado próprio, mas serve para agrupar elementos.
+
+        Aqui usamos duas classes:
+        - cabecalho: controla o layout específico do topo.
+        - container: reaproveita uma regra geral que centraliza o conteúdo.
+      -->
+
+      <!-- Link envolvendo a logo; ao clicar nela, o usuário volta para a página inicial. -->
+      <a class="logo-link" href="index.html" aria-label="Ir para a página inicial">
+        <!--
+          <a> cria um link.
+          href="index.html" diz para onde o link vai.
+          aria-label ajuda leitores de tela, melhorando acessibilidade.
+        -->
+
+        <img
+          class="logo-texto"
+          src="imagens/logos/big fat slice readonly.png"
+          alt="Big Fat Slice"
+        />
+        <!--
+          <img> mostra uma imagem.
+          src é o caminho do arquivo.
+          alt é o texto alternativo, usado caso a imagem não carregue
+          e também por leitores de tela.
+        -->
+      </a>
+
+      <!-- Menu principal de navegação do site. -->
+      <nav class="menu-navegacao" aria-label="Menu principal">
+        <!--
+          <nav> indica uma área de navegação.
+          Usar <nav> é melhor do que uma <div> comum quando estamos criando menus,
+          porque deixa o HTML mais semântico e profissional.
+        -->
+
+        <a class="ativo" href="index.html">Home</a>
+        <!-- class="ativo" marca o link da página atual. No CSS ele ganha destaque. -->
+        <a href="menu.html">Cardápio</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal da página. -->
+  <main>
+    <!--
+      <main> representa o conteúdo principal.
+      O ideal é ter apenas um <main> por página.
+      Cabeçalho e rodapé ficam fora dele porque são áreas repetidas do site.
+    -->
+
+    <!-- Seção inicial, chamada de hero, usada para apresentar a pizzaria rapidamente. -->
+    <section class="hero container">
+      <!--
+        <section> separa uma parte importante da página.
+        A classe hero indica a primeira seção de impacto do site.
+        Ela usa CSS Grid para colocar texto de um lado e imagem do outro.
+      -->
+
+      <!-- Bloco com textos e botões da apresentação. -->
+      <div class="hero-texto">
+        <!-- Pequeno destaque acima do título principal. -->
+        <span class="tag">Fatias gigantes estilo americano</span>
+        <!--
+          <span> é usado para pequenos trechos de texto.
+          Diferente da <div>, ele normalmente ocupa apenas o espaço do conteúdo.
+        -->
+
+        <!-- Título principal da página, importante para apresentação e acessibilidade. -->
+        <h1>Big Fat Slice</h1>
+        <!--
+          <h1> é o título mais importante da página.
+          Normalmente usamos apenas um h1 por página.
+          Títulos menores seguem a ordem h2, h3, h4...
+        -->
+
+        <!-- Texto curto que explica a proposta da pizzaria. -->
+        <p>
+          Pizzas generosas, massa artesanal e muito queijo para quem gosta de
+          sabor de verdade. Peça sua fatia favorita ou monte a noite perfeita
+          com nossos combos.
+        </p>
+
+        <!-- Área dos botões principais de ação. -->
+        <div class="botoes">
+          <!-- Link que leva o usuário para a página do cardápio. -->
+          <a class="btn btn-principal" href="menu.html">Ver cardápio</a>
+          <!--
+            Este é um link com aparência de botão.
+            Usamos <a> quando a ação leva para outra página.
+            As classes btn e btn-principal aplicam o visual pelo CSS.
+          -->
+
+          <!-- Botão controlado pelo JavaScript para mostrar a promoção do dia. -->
+          <button class="btn btn-secundario" id="btnPromocao" type="button">
+            Promoção do dia
+          </button>
+          <!--
+            Este é um botão real.
+            Usamos <button> quando a ação acontece na própria página.
+
+            id="btnPromocao" é único e serve para o JavaScript encontrar este botão.
+            No script.js existe: document.getElementById("btnPromocao").
+          -->
+        </div>
+      </div>
+
+      <!-- Bloco visual com a logo principal da pizzaria. -->
+      <div class="hero-imagem" aria-hidden="true">
+        <img
+          class="logo-principal"
+          src="imagens/logos/logo da pizzaria.png"
+          alt=""
+        />
+        <!--
+          alt="" foi deixado vazio porque essa imagem é decorativa.
+          A informação principal da marca já aparece no texto e no cabeçalho.
+        -->
+      </div>
+    </section>
+
+    <!-- Seção com três diferenciais rápidos da pizzaria. -->
+    <section class="destaques">
+      <div class="container grade-destaques">
+        <!--
+          A classe grade-destaques transforma os cards em uma grade no CSS.
+          Em telas grandes aparecem 3 colunas.
+          No celular, o @media do CSS muda para 1 coluna.
+        -->
+
+        <!-- Card individual de destaque. -->
+        <article class="card-destaque">
+          <!--
+            <article> é usado para um bloco de conteúdo que faz sentido sozinho.
+            Aqui cada card apresenta um diferencial da pizzaria.
+          -->
+          <h2>Fatias gigantes</h2>
+          <p>Porções bem servidas, perfeitas para matar a fome sem miséria.</p>
+        </article>
+
+        <!-- Card individual de destaque. -->
+        <article class="card-destaque">
+          <h2>Massa artesanal</h2>
+          <p>Massa leve, crocante nas bordas e preparada com cuidado.</p>
+        </article>
+
+        <!-- Card individual de destaque. -->
+        <article class="card-destaque">
+          <h2>Delivery rápido</h2>
+          <p>Sua pizza chega quentinha para você aproveitar no melhor ponto.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção usada para destacar uma promoção especial. -->
+    <section class="promocao container">
+      <!--
+        Esta seção usa display:flex no CSS.
+        O flex organiza a descrição da promoção de um lado
+        e o preço destacado do outro.
+      -->
+
+      <!-- Bloco com a descrição da promoção. -->
+      <div class="promocao-texto">
+        <span>Oferta especial</span>
+        <h2>Combo Big Fat</h2>
+        <p>
+          Pizza grande com borda recheada e refrigerante incluso. Uma opção
+          simples, completa e perfeita para dividir.
+        </p>
+      </div>
+
+      <!-- Bloco visual que destaca o preço da promoção. -->
+      <div class="promocao-preco">
+        <p>A partir de</p>
+        <strong>R$ 49,90</strong>
+      </div>
+    </section>
+
+    <!-- Seção com sugestões rápidas dos produtos mais pedidos. -->
+    <section class="mais-pedidos container">
+      <div class="secao-titulo">
+        <!--
+          Este padrão de título pode ser reaproveitado em outras seções:
+          um <span> pequeno em cima e um <h2> maior embaixo.
+        -->
+
+        <span>Favoritas da casa</span>
+        <h2>Mais pedidas</h2>
+      </div>
+
+      <!-- Grade com cards de pizzas. -->
+      <div class="cards-pizzas">
+        <!--
+          Para adicionar outra pizza aqui:
+          1. Copie um bloco <article class="pizza-card"> inteiro.
+          2. Troque o nome no <h3>.
+          3. Troque a descrição no <p>.
+          4. Troque o preço no <strong>.
+        -->
+
+        <article class="pizza-card">
+          <h3>Calabresa Big</h3>
+          <p>Calabresa, cebola, mussarela e molho especial da casa.</p>
+          <strong>R$ 39,90</strong>
+        </article>
+
+        <article class="pizza-card">
+          <h3>Frango Supreme</h3>
+          <p>Frango desfiado, catupiry, milho e bastante queijo.</p>
+          <strong>R$ 44,90</strong>
+        </article>
+
+        <article class="pizza-card">
+          <h3>Big Cheese</h3>
+          <p>Combinação cremosa de queijos com massa artesanal.</p>
+          <strong>R$ 46,90</strong>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção com informações úteis para o cliente. -->
+    <section class="info-pizzaria container">
+      <!--
+        Esta área é útil para informações rápidas.
+        Cada <article> vira uma caixa visual no CSS.
+      -->
+
+      <article>
+        <h2>Onde estamos</h2>
+        <p>Rua das Pizzas, 123 - Centro</p>
+      </article>
+
+      <article>
+        <h2>Horário</h2>
+        <p>Terça a domingo, das 18h às 23h</p>
+      </article>
+
+      <article>
+        <h2>Contato</h2>
+        <p>(44) 99999-9999</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- Rodapé com logo e resumo da marca. -->
+  <footer class="rodape">
+    <!--
+      <footer> é o fechamento da página.
+      Normalmente ele tem contato, resumo, redes sociais ou direitos autorais.
+    -->
+
+    <div class="container rodape-conteudo">
+      <img
+        src="imagens/logos/logo branca da pizzaria.png"
+        alt="Logo branca da Big Fat Slice"
+      />
+
+      <div>
+        <h2>Sobre nós</h2>
+        <p>
+          Somos uma pizzaria feita para quem ama fatias grandes, muito queijo
+          e sabores marcantes em um ambiente simples e acolhedor.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Importa o JavaScript que controla pequenas interações da página. -->
+  <script src="script.js"></script>
+  <!--
+    O script fica no final do body para garantir que o HTML já carregou.
+    Assim o JavaScript consegue encontrar o botão pelo id sem problema.
+  -->
+</body>
+
+</html>
