@@ -1,145 +1,138 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ultra&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ultra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
 /*Style Body do site*/
 body {
-    font-family: 'montserrat', sans-serif, Arial, Helvetica;
-    color: white;
-    margin: 0;
+  font-family: "montserrat", sans-serif, Arial, Helvetica;
+  color: white;
+  margin: 0;
 }
 /* camada do fundo */
 body::before {
-    content: ""; /* cria a camada do fundo */
-    position: absolute; /* tira do fluxo normal da página */
-    inset: 0; /* ocupa a tela inteira */
-    background: url("imagens/logos/logo da pizzaria.png") center/500px repeat; /* imagem centralizada, repetida e com tamanho 500px */
-    opacity: 0.03; /* deixa a imagem bem fraca (efeito marca d'água) */
-    z-index: -1; /* joga para trás de todo o conteúdo */
+  content: ""; /* cria a camada do fundo */
+  position: absolute; /* tira do fluxo normal da página */
+  inset: 0; /* ocupa a tela inteira */
+  background: url("imagens/logos/logo da pizzaria.png") center/500px repeat; /* imagem centralizada, repetida e com tamanho 500px */
+  opacity: 0.03; /* deixa a imagem bem fraca (efeito marca d'água) */
+  z-index: -1; /* joga para trás de todo o conteúdo */
 }
-
-.logopizzaria{
-    width: 200px;
-    margin-left: 600px;
+.logopizzaria {
+  width: 200px;
 }
-
-.segundotitulo{
-    color: black;
-    text-align: center;
-    font-size: 30px;
-    padding-top: 50px;
+.segundotitulo {
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 50px;
 }
-
 main {
-    padding: 50px;
-    margin-top: 180px;
+  margin-top: 180px;
 }
-
-
-.descricao {
-    color: rgb(212, 38, 0);
-    font-size: 40px;
-    font-weight: bold;
-    font-family: 'Lobster', cursive;
-    margin: 0;
+.depoisbemvindo {
+  color: rgb(212, 38, 0);
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Lobster", Arial, Helvetica, sans-serif;
+  text-align: center;
 }
-
-.titulo {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+.dentrodiv {
+  color: black;
+  transform: translatey(175px);
 }
-
-.titulo h1 {
-    color: black;
-    font-size: 35px;
-    font-weight: 700;
-    margin: 0;
-}
-
 .apresentacao {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 50px;
 }
+/*Style Cabeçalho do site e menu do site*/
+.primeiradiv {
+  background: #c20000;
+  width: 100%;
+  height: 700px;
+  transform: translateY();
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.propagandadiv1 {
+  width: 400px;
+  max-width: 100%;
+  transform: translate(400px, 180px);
+}
+.propagandadiv2 {
+  width: 800px;
+  transform: translate(-350px, -320px);
+}
+.cabecalho {
+  background-color: #911c03;
+  display: flex;
+  align-items: center; /*Alinha Verticalmente*/
+  justify-content: center; /*Alinha Horizontalmente*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+}
+nav a {
+  font-weight: bold;
+  margin-left: 60px;
+  text-decoration: none;
+  font-family: "montserrat";
+  color: white;
+  font-size: 20px;
+}
+.textopizzaria {
+  color: white;
+  width: 200px;
+}
+.produtos {
+  /*TODOS OS CARDS JUNTOS*/
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px;
+  gap: 40px;
+}
+.cardpizza {
+  /*CARD INDIVIDUAL DE CADA PIZZA*/
+  width: 300px;
 
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #dbdbdb;
 
-/*Style Cabeçalho do site/Menu do site*/
-.cabecalho{
-    background-color: #911C03;
-    display: flex; 
-    align-items: center; /*Alinha Verticalmente*/
-    justify-content: center ; /*Alinha Horizontalmente*/
-    position: fixed;
-    padding: 20px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-nav a{
-    font-weight: bold;
-    margin-left: 60px;
-    text-decoration: none;
-    font-family: 'montserrat';
-    color: white;
-    font-size: 20px;
+.cardpizza img {
+  /*IMAGEM INDIVIDUAL DE CADA CARD*/
+  border-radius: 20px;
+  width: 300px;
+  object-fit: cover;
 }
-.textopizzaria{
-    color: white;
-    width: 200px;
+.cardpizza h2 {
+  /*TEXTO INDIVIDUAL DE CADA CARD*/
+  color: red;
+  font-family: "montserrat";
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30px;
 }
-.Titulomenu{
-    color: black;
-}
-.produtos{ /*TODOS OS CARDS JUNTOS*/
-    display: flex;
-    justify-content: start;
-    flex-wrap: wrap;
-    padding: 50px;
-    gap: 40px;
-    
-}
-.cardpizza{ /*CARD INDIVIDUAL DE CADA PIZZA*/
-    width: 300px;
-    
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-    background-color: #DBDBDB;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.cardpizza img { /*IMAGEM INDIVIDUAL DE CADA CARD*/
-    border-radius: 20px;
-    width: 300px;
-    object-fit: cover;
-}
-.cardpizza h2{ /*TEXTO INDIVIDUAL DE CADA CARD*/
-    color: red;
-    font-family:'montserrat';
-    font-size: 25px;
-    font-weight: bold;
-    line-height: 30px;
-}
-
-
 /*Style Rodapé do site*/
-.rodape{
-    height:500px;
-    background-color: #211E1E;
+.rodape {
+  height: 500px;
+  background-color: #211e1e;
 }
-
-
-
 
 /* ===================================================== */
 /* CSS PRA MEXER NOS ELEMENTOS MAIS USADOS               */
 /* ===================================================== */
-
 
 /* ===================================================== */
 /* CENTRALIZAR TEXTO                                     */
@@ -156,7 +149,6 @@ left = esquerda
 center = centro
 right = direita
 */
-
 
 /* ===================================================== */
 /* MEXER O TEXTO                                         */
@@ -180,7 +172,6 @@ font-weight -> grossura da letra
 bold = negrito
 */
 
-
 /* ===================================================== */
 /* MUDAR FUNDO                                           */
 /* ===================================================== */
@@ -193,7 +184,6 @@ bold = negrito
 background-color
 muda a cor do fundo
 */
-
 
 /* ===================================================== */
 /* MEXER IMAGEM                                          */
@@ -215,7 +205,6 @@ auto -> mantém proporção
 border-radius -> arredonda imagem
 */
 
-
 /* ===================================================== */
 /* EMPURRAR ELEMENTOS                                    */
 /* ===================================================== */
@@ -233,7 +222,6 @@ margin-top
 empurra pra baixo
 */
 
-
 /* ===================================================== */
 /* ESPAÇO DENTRO DO ELEMENTO                             */
 /* ===================================================== */
@@ -246,7 +234,6 @@ empurra pra baixo
 padding
 cria espaço interno
 */
-
 
 /* ===================================================== */
 /* CRIAR CARD                                            */
@@ -269,7 +256,6 @@ border-radius -> arredonda
 width -> largura
 */
 
-
 /* ===================================================== */
 /* JUNTAR ELEMENTOS LADO A LADO                          */
 /* ===================================================== */
@@ -282,7 +268,6 @@ width -> largura
 display: flex
 coloca os elementos lado a lado
 */
-
 
 /* ===================================================== */
 /* CENTRALIZAR ELEMENTOS                                 */
@@ -302,7 +287,6 @@ align-items
 alinha verticalmente
 */
 
-
 /* ===================================================== */
 /* DAR ESPAÇO ENTRE ELEMENTOS                            */
 /* ===================================================== */
@@ -316,7 +300,6 @@ alinha verticalmente
 gap
 espaço entre elementos
 */
-
 
 /* ===================================================== */
 /* FAZER QUEBRAR LINHA                                   */
@@ -332,7 +315,6 @@ flex-wrap: wrap
 faz quebrar linha
 quando faltar espaço
 */
-
 
 /* ===================================================== */
 /* DEIXAR IMAGEM E TEXTO UM EMBAIXO DO OUTRO             */
@@ -352,7 +334,6 @@ align-items: center
 centraliza
 */
 
-
 /* ===================================================== */
 /* MEXER NA POSIÇÃO                                      */
 /* ===================================================== */
@@ -370,7 +351,6 @@ move pra direita
 top
 move pra baixo
 */
-
 
 /* ===================================================== */
 /* COLOCAR IMAGEM DE FUNDO                               */
@@ -393,7 +373,6 @@ center
 centraliza
 */
 
-
 /* ===================================================== */
 /* DEIXAR FUNDO TRANSPARENTE                             */
 /* ===================================================== */
@@ -413,7 +392,6 @@ transparência
 0.1 = quase invisível
 */
 
-
 /* ===================================================== */
 /* TIRAR LINHA DO LINK                                   */
 /* ===================================================== */
@@ -425,7 +403,6 @@ transparência
 /*
 remove sublinhado
 */
-
 
 /* ===================================================== */
 /* MUDAR COR QUANDO PASSA O MOUSE                        */
@@ -440,7 +417,6 @@ remove sublinhado
 ativa quando passa mouse
 */
 
-
 /* ===================================================== */
 /* ANIMAÇÃO SUAVE                                        */
 /* ===================================================== */
@@ -453,7 +429,6 @@ ativa quando passa mouse
 deixa mudança suave
 */
 
-
 /* ===================================================== */
 /* SOMBRA                                                */
 /* ===================================================== */
@@ -465,7 +440,6 @@ deixa mudança suave
 /*
 sombra do elemento
 */
-
 
 /* ===================================================== */
 /* ESCONDER ELEMENTO                                     */
@@ -480,7 +454,6 @@ none
 esconde elemento
 */
 
-
 /* ===================================================== */
 /* OCUPAR TELA INTEIRA                                   */
 /* ===================================================== */
@@ -494,7 +467,6 @@ esconde elemento
 100% da altura da tela
 */
 
-
 /* ===================================================== */
 /* DEIXAR RESPONSIVO                                     */
 /* ===================================================== */
@@ -506,7 +478,6 @@ esconde elemento
 /*
 imagem nunca passa do tamanho da tela
 */
-
 
 /* ===================================================== */
 /* CLASSES E IDS                                         */
