@@ -1,12 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ultra&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
-/*Style Body do site*/
+main {
+  margin-top: 180px;
+}
+
+nav a {
+  font-weight: bold;
+  margin-left: 60px;
+  text-decoration: none;
+  font-family: "montserrat";
+  color: black;
+  font-size: 20px;
+}
+
 body {
   font-family: "montserrat", sans-serif, Arial, Helvetica;
   color: white;
   margin: 0;
 }
+
 /* camada do fundo */
 body::before {
   content: ""; /* cria a camada do fundo */
@@ -16,52 +29,8 @@ body::before {
   opacity: 0.03; /* deixa a imagem bem fraca (efeito marca d'água) */
   z-index: -1; /* joga para trás de todo o conteúdo */
 }
-.segundotitulo {
-  color: black;
-  text-align: center;
-  font-size: 30px;
-  padding-top: 50px;
-}
-main {
-  margin-top: 180px;
-}
-.depoisbemvindo {
-  color: rgb(212, 38, 0);
-  font-size: 60px;
-  font-weight: bold;
-  font-family: "Lobster", Arial, Helvetica, sans-serif;
-  text-align: center;
-}
-.dentrodiv {
-  color: black;
-  transform: translatey(175px);
-}
-.apresentacao {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding-bottom: 50px;
-}
-/*Style Cabeçalho do site e menu do site*/
-.primeiradiv {
-  background: #c20000;
-  width: 100%;
-  height: 700px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: -70px
-}
-.propagandadiv1 {
-  width: 400px;
-  max-width: 100%;
-  transform: translate(400px, 180px);
-}
-.propagandadiv2 {
-  width: 800px;
-  transform: translate(-350px, -320px);
-}
+
+/*Style Cabeçalho do site e menu*/
 .cabecalho {
   background-color: #911c03;
   display: flex;
@@ -73,18 +42,49 @@ main {
   width: 100%;
   z-index: 1;
 }
-nav a {
-  font-weight: bold;
-  margin-left: 60px;
-  text-decoration: none;
-  font-family: "montserrat";
-  color: white;
-  font-size: 20px;
-}
+
 .textopizzaria {
   color: white;
   width: 200px;
 }
+
+/*Style Body do site*/
+.primeiradiv {
+  background: #c20000;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -70px
+}
+
+.dentrodiv {
+  color: black;
+  transform: translatey(175px);
+}
+
+.propagandadiv1 {
+  width: 400px;
+  max-width: 100%;
+  transform: translate(400px, 180px);
+}
+
+.propagandadiv2 {
+  width: 800px;
+  transform: translate(-350px, -320px);
+}
+
+.depoisbemvindo {
+  color: rgb(212, 38, 0);
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Lobster", Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+/*Style CSS Menu*/
 .produtos {
   /*TODOS OS CARDS JUNTOS*/
   margin-top: 150px;
@@ -94,6 +94,7 @@ nav a {
   padding: 50px;
   gap: 40px;
 }
+
 .cardpizza {
   /*CARD INDIVIDUAL DE CADA PIZZA*/
   width: 300px;
@@ -107,12 +108,14 @@ nav a {
   flex-direction: column;
   align-items: center;
 }
+
 .cardpizza img {
   /*IMAGEM INDIVIDUAL DE CADA CARD*/
   border-radius: 20px;
   width: 300px;
   object-fit: cover;
 }
+
 .cardpizza h2 {
   /*TEXTO INDIVIDUAL DE CADA CARD*/
   color: red;
@@ -121,6 +124,7 @@ nav a {
   font-weight: bold;
   line-height: 30px;
 }
+
 /*Style Rodapé do site*/
 .rodape {
   height: 500px;
