@@ -1,6 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ultra&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
+:root {
+  /*
+    :root representa a raiz do documento.
+    Na prática, usamos :root para criar variáveis globais.
+    
+    Variáveis começam com dois traços, por exemplo:
+    --vermelho: #8f1d14;
+
+    Para usar depois:
+    color: var(--vermelho);
+  */
+
+  /* Cor principal da marca, usada em cabeçalho, botões e detalhes. */
+  --vermelho: #8f1d14;
+
+  /* Vermelho um pouco mais vivo, usado para chamar atenção em preços e destaques. */
+  --vermelho-claro: #c93a24;
+
+  /* Amarelo usado em etiquetas pequenas e pontos de destaque. */
+  --amarelo: #f7c948;
+
+  /* Cor escura principal para textos e fundo do rodapé. */
+  --escuro: #231f20;
+
+  /* Cor clara de fundo, trazendo sensação de pizzaria e deixando a leitura suave. */
+  --creme: #fffaf3;
+
+  /* Branco levemente quente usado nos cards. */
+  --branco: #fffaf3;
+
+  /* Cor de texto secundário, menos forte que o preto. */
+  --cinza-texto: #5c5550;
+
+  /* Sombra padrão para cards e caixas importantes. */
+  --sombra: 0 14px 35px rgba(35, 31, 32, 0.14);
+
+  /* Largura máxima do conteúdo para o site não ficar muito espalhado em telas grandes. */
+  --largura-container: 1120px;
+}
+
+/* O seletor universal aplica regras básicas em todos os elementos. */
+* {
+  /* Faz largura e altura considerarem também padding e borda. */
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* Suaviza a rolagem ao clicar em links de navegação. */
+}
+
 main {
   margin-top: 180px;
 }
@@ -15,9 +65,10 @@ nav a {
 }
 
 body {
-  font-family: "montserrat", sans-serif, Arial, Helvetica;
-  color: white;
+  font-family: "Montserrat", Arial, sans-serif;
+  color: var(--escuro);
   margin: 0;
+  background-color: var(--creme); /* Define a cor de fundo geral. */
 }
 
 /* camada do fundo */
@@ -28,6 +79,16 @@ body::before {
   background: url("imagens/logos/logo da pizzaria.png") center/500px repeat; /* imagem centralizada, repetida e com tamanho 500px */
   opacity: 0.03; /* deixa a imagem bem fraca (efeito marca d'água) */
   z-index: -1; /* joga para trás de todo o conteúdo */
+}
+
+/* Garante que imagens nunca ultrapassem a largura do elemento onde estão. */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none; /* Remove a decoração padrão dos links. */
 }
 
 /*Style Cabeçalho do site e menu*/
