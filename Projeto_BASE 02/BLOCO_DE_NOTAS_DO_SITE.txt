@@ -1,0 +1,264 @@
+BIG FAT SLICE - BLOCO DE NOTAS DO SITE
+
+Este arquivo explica o que foi feito no site e serve como guia para quem nunca mexeu com HTML, CSS ou JavaScript.
+
+
+1. O QUE FOI FEITO NO SITE
+
+O site atual foi juntado com o Projeto_BASE.
+
+Foi aproveitado do Projeto_BASE:
+- Cabeçalho mais organizado.
+- Layout responsivo, ou seja, que se adapta melhor em celular, tablet e computador.
+- Cards com sombra, bordas e espaçamento mais bonito.
+- Página de cardápio mais completa.
+- Estrutura mais profissional usando header, main, section, article e footer.
+
+Foi aproveitado do site atual:
+- Imagens de propaganda da página inicial.
+- Mapa do Google Maps.
+- Identidade da pizzaria Big Fat Slice.
+- Menu com pizzas e imagens.
+
+Também foi feito:
+- Correção de textos com acentos.
+- Criação de uma home mais completa.
+- Criação de uma seção de promoção.
+- Criação de uma seção "Mais pedidas".
+- Criação de uma seção de localização.
+- Criação do arquivo script.js para o botão "Promoção do dia".
+- Comentários explicativos dentro dos arquivos principais.
+
+
+2. PARA QUE SERVE CADA ARQUIVO
+
+index.html
+É a página inicial do site.
+Aqui ficam o cabeçalho, a primeira tela, a chamada principal, os destaques, a promoção, as pizzas mais pedidas, a localização e o rodapé.
+
+menu.html
+É a página do cardápio.
+Aqui ficam os cards com todas as pizzas, imagens e descrições.
+
+style.css
+É o arquivo de estilo.
+Ele controla cores, tamanhos, espaçamentos, sombras, posicionamento, responsividade e aparência geral.
+
+script.js
+É o arquivo de interação.
+Ele controla o botão "Promoção do dia", mostrando uma mensagem quando o usuário clica.
+
+imagens/
+É a pasta onde ficam as imagens usadas no site.
+As logos ficam em imagens/logos.
+As pizzas ficam em imagens/menu.
+
+
+3. EXPLICAÇÃO BÁSICA DE HTML
+
+HTML monta o conteúdo da página.
+
+Exemplo:
+<h1>Big Fat Slice</h1>
+
+Isso cria um título grande.
+
+Tags comuns:
+- <header> cria o cabeçalho.
+- <main> marca o conteúdo principal.
+- <section> separa uma parte da página.
+- <article> cria um bloco independente, como um card.
+- <h1>, <h2>, <h3> criam títulos.
+- <p> cria parágrafos.
+- <a> cria links.
+- <img> mostra imagens.
+- <footer> cria o rodapé.
+
+Classes:
+Quando aparece class="alguma-coisa", isso liga o HTML ao CSS.
+Exemplo:
+<section class="hero">
+
+No CSS, existe:
+.hero {
+  ...
+}
+
+Ou seja, o CSS procura a classe hero e aplica estilo nela.
+
+
+4. EXPLICAÇÃO BÁSICA DE CSS
+
+CSS deixa o site bonito.
+
+Exemplo:
+.topo {
+  background-color: red;
+}
+
+Isso muda a cor de fundo do elemento que tem class="topo".
+
+Coisas importantes:
+- color muda a cor do texto.
+- background-color muda a cor do fundo.
+- font-size muda o tamanho da letra.
+- padding cria espaço interno.
+- margin cria espaço externo.
+- display: flex organiza elementos em linha ou coluna.
+- display: grid cria grades.
+- border-radius arredonda cantos.
+- box-shadow cria sombra.
+- width muda largura.
+- height muda altura.
+
+No começo do CSS existem variáveis:
+--vermelho: #8f1d14;
+--amarelo: #f7c948;
+
+Elas guardam cores usadas várias vezes.
+Se quiser mudar o vermelho do site inteiro, altere o valor de --vermelho.
+
+
+5. EXPLICAÇÃO BÁSICA DE JAVASCRIPT
+
+JavaScript deixa o site interativo.
+
+Neste site, ele pega o botão de promoção:
+document.getElementById("btnPromocao")
+
+Depois espera o clique:
+addEventListener("click", ...)
+
+E mostra uma mensagem:
+alert("Promoção do dia...")
+
+Para mudar a frase do botão, edite o texto dentro do alert no arquivo script.js.
+
+
+6. COMO ALTERAR TEXTOS DO SITE
+
+Para alterar o nome da pizzaria:
+- Abra index.html.
+- Procure por "Big Fat Slice".
+- Troque pelo nome desejado.
+
+Para alterar o texto da promoção:
+- Abra index.html.
+- Procure por "Combo Big Fat".
+- Altere o título, descrição e preço.
+- Abra script.js.
+- Altere também a mensagem do alert.
+
+Para alterar endereço e telefone:
+- Abra index.html.
+- Procure pela seção "Nossa localização".
+- Troque rua, horário e telefone.
+
+
+7. COMO ADICIONAR UMA NOVA PIZZA NO CARDÁPIO
+
+Abra menu.html.
+Copie um bloco como este:
+
+<article class="cardpizza">
+  <img src="imagens/menu/pizza calabresa.png" alt="Pizza Calabresa" />
+  <h2>Pizza Calabresa</h2>
+  <p>Calabresa fatiada, cebola e mussarela.</p>
+</article>
+
+Cole abaixo dos outros cards.
+Depois troque:
+- O caminho da imagem.
+- O texto do alt.
+- O nome dentro do h2.
+- A descrição dentro do p.
+
+
+8. COMO TROCAR UMA IMAGEM
+
+Para trocar imagem:
+1. Coloque a nova imagem na pasta imagens.
+2. Veja o nome correto do arquivo.
+3. No HTML, altere o src.
+
+Exemplo:
+src="imagens/menu/minha-pizza.png"
+
+Importante:
+Se o nome do arquivo tiver espaço, escreva exatamente igual.
+Exemplo:
+src="imagens/logos/propaganda div1.png"
+
+
+9. OPÇÕES QUE VOCÊ PODE COLOCAR NO SITE
+
+Opções simples:
+- Botão de WhatsApp para pedido.
+- Links para Instagram, TikTok e Facebook.
+- Seção "Quem somos".
+- Seção "Avaliações de clientes".
+- Seção "Combos".
+- Tabela de preços por tamanho.
+- Informações sobre entrega.
+- Banner com promoção da semana.
+- Horário de funcionamento mais detalhado.
+- Botão "Voltar ao topo".
+
+Opções um pouco mais avançadas:
+- Filtro no cardápio, separando pizzas salgadas e doces.
+- Carrinho de compras simples.
+- Formulário para pedido.
+- Cálculo de total do pedido.
+- Modo escuro.
+- Animações suaves ao rolar a página.
+- Galeria de fotos.
+- Página de contato.
+- Página individual para cada pizza.
+- Campo de busca no cardápio.
+
+
+10. IDEIA DE BOTÃO DE WHATSAPP
+
+Você pode colocar este link no HTML:
+
+<a class="btn btn-principal" href="https://wa.me/5544999999999" target="_blank">
+  Pedir pelo WhatsApp
+</a>
+
+Troque o número 5544999999999 pelo número correto.
+55 é o código do Brasil.
+
+
+11. DICAS IMPORTANTES
+
+Sempre que criar uma seção nova:
+- Use <section>.
+- Coloque uma classe.
+- Depois estilize essa classe no style.css.
+
+Sempre que criar um botão:
+- Se ele leva para outra página, use <a>.
+- Se ele faz uma ação na mesma página, use <button>.
+
+Sempre que colocar imagem:
+- Use alt explicando a imagem.
+- Exemplo: alt="Pizza de Calabresa".
+
+Sempre que mexer no CSS:
+- Procure a classe correta.
+- Mude uma coisa por vez.
+- Abra o site no navegador para ver o resultado.
+
+
+12. RESUMO FINAL
+
+O site agora tem:
+- Página inicial mais bonita.
+- Cardápio organizado.
+- Estilo único nas páginas.
+- Imagens bem encaixadas.
+- Mapa de localização.
+- Promoção com JavaScript.
+- Comentários nos códigos para estudo.
+
+O projeto ficou simples, mas com cara mais organizada e pronta para evoluir.
