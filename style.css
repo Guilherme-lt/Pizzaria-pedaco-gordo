@@ -52,7 +52,7 @@ html {
 }
 
 main {
-  margin-top: 180px;
+  margin-top: 104px;
 }
 
 nav a {
@@ -111,30 +111,57 @@ a {
 
 /*Style Body do site*/
 .primeiradiv {
-  background: #c20000;
+  background: linear-gradient(#911c03, #4A0000);
+
   width: 100%;
-  height: 700px;
+  min-height: 700px;
+
   display: flex;
-  align-items: center;
-  flex-direction: column;
   justify-content: center;
-  margin-top: -70px
+  align-items: center;
+
+  gap: 30px;
+  flex-wrap: wrap;
+
+  padding: 40px;
+  box-sizing: border-box;
 }
 
 .dentrodiv {
-  color: black;
-  transform: translatey(175px);
+  text-align: center;
+  color: White;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 100%;
+
 }
 
 .propagandadiv1 {
   width: 400px;
   max-width: 100%;
-  transform: translate(400px, 180px);
 }
 
 .propagandadiv2 {
   width: 800px;
-  transform: translate(-350px, -320px);
+  max-width: 100%;
+}
+.segundadiv {
+  background: #4A0000;
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.segundadivtext{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:xx-large;
+}
+.combochocolate {
+  width: 500px;
+  max-width: 100%;
+  margin-bottom: 50px;
+
 }
 
 .depoisbemvindo {
