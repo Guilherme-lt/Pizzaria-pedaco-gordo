@@ -108,10 +108,24 @@ a {
   color: white;
   width: 200px;
 }
+.botaopradoce {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+}
 
+.botaodoce {
+  background-color: #911c03;
+  color: white;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
 /*Style Body do site*/
 .primeiradiv {
-  background: linear-gradient(#911c03, #4A0000);
+  background: linear-gradient(#911c03, #4a0000);
 
   width: 100%;
   min-height: 700px;
@@ -130,9 +144,8 @@ a {
 .dentrodiv {
   text-align: center;
   color: White;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   width: 100%;
-
 }
 
 .propagandadiv1 {
@@ -145,7 +158,7 @@ a {
   max-width: 100%;
 }
 .segundadiv {
-  background: #4A0000;
+  background: #4a0000;
   width: 100%;
   min-height: 700px;
   display: flex;
@@ -153,15 +166,14 @@ a {
   flex-direction: column;
   justify-content: center;
 }
-.segundadivtext{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size:xx-large;
+.segundadivtext {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: xx-large;
 }
 .combochocolate {
   width: 500px;
   max-width: 100%;
   margin-bottom: 50px;
-
 }
 
 .depoisbemvindo {
@@ -215,6 +227,8 @@ a {
 
 /*Style Rodapé do site*/
 .rodape {
+  color: var(--branco);
+
   height: 500px;
   background-color: #211e1e;
 }
