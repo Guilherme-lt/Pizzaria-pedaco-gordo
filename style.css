@@ -113,6 +113,11 @@ a {
   justify-content: center;
   margin-top: 120px;
 }
+#doces{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .botaodoce {
   background-color: #911c03;
@@ -184,7 +189,7 @@ a {
   text-align: center;
 }
 
-/*Style CSS Menu*/
+/*PIZZAS SALGADAS*/
 .produtos {
   /*TODOS OS CARDS JUNTOS*/
   margin-top: 150px;
@@ -194,7 +199,7 @@ a {
   padding: 50px;
   gap: 40px;
 }
-
+/*CARD DAS PIZZAS*/
 .cardpizza {
   /*CARD INDIVIDUAL DE CADA PIZZA*/
   width: 300px;
@@ -208,14 +213,12 @@ a {
   flex-direction: column;
   align-items: center;
 }
-
 .cardpizza img {
   /*IMAGEM INDIVIDUAL DE CADA CARD*/
   border-radius: 20px;
   width: 300px;
   object-fit: cover;
 }
-
 .cardpizza h2 {
   /*TEXTO INDIVIDUAL DE CADA CARD*/
   color: red;
@@ -224,7 +227,40 @@ a {
   font-weight: bold;
   line-height: 30px;
 }
+/*PIZZAS DOCES*/
+.produtosdoce{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.cardpizzadoce {
+  /*CARD INDIVIDUAL DE CADA PIZZA*/
+  width: 300px;
 
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #dbdbdb;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cardpizzadoce img {
+  /*IMAGEM INDIVIDUAL DE CADA CARD*/
+  border-radius: 20px;
+  width: 300px;
+  object-fit: cover;
+}
+.cardpizzadoce h2 {
+  /*TEXTO INDIVIDUAL DE CADA CARD*/
+  color: red;
+  font-family: "montserrat";
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30px;
+}
 /*Style Rodapé do site*/
 .rodape {
   color: var(--branco);
