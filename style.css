@@ -74,7 +74,7 @@ body {
 /* camada do fundo */
 body::before {
   content: ""; /* cria a camada do fundo */
-  position: absolute; /* tira do fluxo normal da página */
+  position: fixed; /* tira do fluxo normal da página */
   inset: 0; /* ocupa a tela inteira */
   background: url("imagens/logos/logo da pizzaria.png") center/500px repeat; /* imagem centralizada, repetida e com tamanho 500px */
   opacity: 0.03; /* deixa a imagem bem fraca (efeito marca d'água) */
@@ -289,12 +289,141 @@ a {
   font-weight: bold;
   line-height: 30px;
 }
+
+#localizacao {
+  /* Espaço em cima e embaixo da seção */
+  padding: 40px;
+
+  /* Centraliza os textos */
+  text-align: center;
+}
+
+#localizacao h2 {
+  /* Cor do título */
+  color: #911c03;
+
+  /* Tamanho do título */
+  font-size: 32px;
+
+  /* Espaço embaixo do título */
+  margin-bottom: 20px;
+}
+
+.mapa-container {
+  /* Centraliza o mapa */
+  display: flex;
+  justify-content: center;
+}
+
+.mapa-container iframe {
+  /* Largura do mapa */
+  width: 80%;
+
+  /* Altura do mapa */
+  height: 350px;
+
+  /* Borda simples */
+  border: 3px solid #911c03;
+
+  /* Arredonda as pontas */
+  border-radius: 10px;
+}
+
 /*Style Rodapé do site*/
 .rodape {
-  color: var(--branco);
-
-  height: 500px;
+  /* Cor de fundo do rodapé. */
   background-color: #211e1e;
+
+  /* Cor dos textos do rodapé. */
+  color: white;
+
+  /* Espaço dentro do rodapé. */
+  padding: 20px;
+
+  /* Centraliza o conteúdo. */
+  text-align: center;
+}
+
+.rodape-principal {
+  /* Coloca a logo e a caixa lado a lado. */
+  display: flex;
+
+  /* Centraliza os itens na vertical. */
+  align-items: center;
+
+  /* Centraliza tudo na horizontal. */
+  justify-content: center;
+}
+
+.rodape-logo {
+  /* Tamanho da logo. */
+  width: 200px;
+
+  /* Espaço entre a logo e a caixa do rodapé. */
+  margin-right: 40px;
+}
+
+.rodape-conteudo {
+  /* Cor e tamanho da borda da caixa. */
+  border: 1px solid #f7c948;
+
+  /* Espaço dentro da caixa. */
+  padding: 20px;
+
+  /* Largura da caixa. */
+  width: 80%;
+
+  /* Tira espaços extras da caixa. */
+  margin: 0;
+}
+
+.rodape-conteudo h3 {
+  /* Cor do título. */
+  color: #f7c948;
+}
+
+.rodape-conteudo h4 {
+  /* Tamanho do texto sobre a pizzaria. */
+  font-size: 16px;
+
+  /* Deixa o texto mais fino. */
+  font-weight: normal;
+}
+
+.rodape a {
+  /* Cor dos links do rodapé. */
+  color: white;
+
+  /* Tira o sublinhado dos links. */
+  text-decoration: none;
+
+  /* Espaço entre os links. */
+  margin: 10px;
+}
+
+.rodape a:hover {
+  /* Cor dos links quando passa o mouse. */
+  color: #f7c948;
+}
+
+.rodape-email {
+  /* Espaço acima e abaixo do email. */
+  margin: 20px 0;
+}
+
+.rodape-copy {
+  /* Tamanho do texto dos direitos reservados. */
+  font-size: 14px;
+
+  /* Faz o texto aparecer abaixo da parte principal. */
+  display: block;
+
+  /* Espaço acima do texto final. */
+  margin-top: 20px;
+}
+
+a:hover {
+  color: red;
 }
 
 /* ===================================================== */
