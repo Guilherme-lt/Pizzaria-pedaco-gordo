@@ -105,8 +105,15 @@ a {
 }
 
 .textopizzaria {
-  color: white;
-  width: 200px;
+  width: 230px;
+
+  animation: subirDescer 3s infinite;
+}
+
+@keyframes subirDescer {
+  50% {
+    transform: translateY(-10px);
+  }
 }
 .botaopradoce {
   display: flex;
