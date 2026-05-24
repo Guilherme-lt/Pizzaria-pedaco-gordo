@@ -218,12 +218,14 @@ a {
   box-shadow: 30px 30px 30px black;
 }
 .iconeEstilização2{
-  transform: translate(-920px, -400px) scaleX(-1);
-}
-.fundoiconepizzadiv2{
   width: 300px;
   max-width: 100%;
-  transform: translate(-900px,-500px) scaleX(-1)
+  transform: translate(-720px, -400px) scaleX(-1);
+}
+.fundoiconedepizza{
+  width: 300px;
+  max-width: 100%;
+  transform: translateX(200px)
 }
 
 .depoisbemvindo {
