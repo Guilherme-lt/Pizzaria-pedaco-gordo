@@ -1,0 +1,149 @@
+/* Regras basicas para o site se adaptar em telas menores */
+
+@media screen and (max-width: 1260px) {
+  .combosalgada {
+    transform: none;
+  }
+
+  .fundoiconedepizza {
+    transform: none;
+  }
+
+  .iconeEstilização2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1409px) {
+  .primeiradivtext,
+  .segundadivtext {
+    font-size: 60px;
+  }
+
+  .primeiradiv,
+  .segundadiv {
+    min-height: auto;
+  }
+
+  .combosalgada,
+  .fundoiconedepizza {
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .cabecalho {
+    flex-direction: column;
+    padding-bottom: 21px;
+  }
+
+  .textopizzaria {
+    width: 180px;
+  }
+
+  nav a {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 16px;
+  }
+
+  main {
+    margin-top: 130px;
+  }
+
+  .primeiradiv,
+  .segundadiv {
+    min-height: auto;
+    padding: 30px 20px;
+  }
+
+  .primeiradivtext,
+  .segundadivtext {
+    font-size: 45px;
+  }
+
+  .imagemfundodiv1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .combosalgada,
+  .combochocolate {
+    width: 100%;
+  }
+
+  .fundoiconedepizza {
+    display: none;
+  }
+
+  .depoisbemvindo {
+    font-size: 35px;
+    padding: 20px;
+  }
+
+  .produtos,
+  .produtosdoce {
+    padding: 20px;
+    gap: 25px;
+    font-size: 30px;
+    width: 100%;
+  }
+
+  .cardpizza,
+  .cardpizzadoce {
+    width: 45%;
+  }
+
+  .cardpizza img,
+  .cardpizzadoce img {
+    width: 100%;
+  }
+
+  #localizacao {
+    padding: 20px;
+  }
+
+  .mapa-container iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  .rodape-principal {
+    flex-direction: column;
+  }
+
+  .rodape-logo {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .rodape-conteudo {
+    width: 100%;
+  }
+
+  .botaopradoce {
+    padding: 30px 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .primeiradivtext,
+  .segundadivtext {
+    font-size: 35px;
+  }
+
+  .depoisbemvindo {
+    font-size: 28px;
+  }
+
+  .cardpizza,
+  .cardpizzadoce {
+    padding: 15px;
+  }
+
+  .rodape-menu a {
+    display: block;
+    margin: 10px;
+  }
+}
