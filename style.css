@@ -166,11 +166,12 @@ a {
   font-family:
     "Lobster", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   width: 100%;
-  font-size: xx-large;
+  font-size: 100px;
   z-index: 1;
 }
 
-.propagandadiv1 {
+.combosalgada {
+  border-radius: 50px;
   width: 1000px;
   max-width: 100%;
   z-index: 1;
@@ -183,7 +184,7 @@ a {
 }
 .segundadiv {
   color: var(--branco);
-  background: linear-gradient(#4a0000 70%,white);
+  background: linear-gradient(#4a0000 70%, transparent);
   width: 100%;
   min-height: 700px;
   display: flex;
@@ -194,14 +195,18 @@ a {
 .segundadivtext {
   font-family:
     "Lobster", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: xx-large;
+  font-size: 100px;
+
 }
-.combochocolate {.
-  border-radius: 100px;
+.combochocolate {
+  border-radius: 50px;
   width: 500px;
   max-width: 100%;
   margin-bottom: 50px;
   box-shadow: 30px 30px 30px black;
+}
+.iconeEstilização2{
+  transform: translate(-920px, -400px) scaleX(-1);
 }
 .fundoiconepizzadiv2{
   width: 300px;
