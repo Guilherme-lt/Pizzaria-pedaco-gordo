@@ -76,8 +76,8 @@ body::before {
   content: ""; /* cria a camada do fundo */
   position: fixed; /* tira do fluxo normal da página */
   inset: 0; /* ocupa a tela inteira */
-  background: url("imagens/logos/logo da pizzaria.png") center/500px repeat; /* imagem centralizada, repetida e com tamanho 500px */
-  opacity: 0.03; /* deixa a imagem bem fraca (efeito marca d'água) */
+  background: url("../imagens/logos/logo da pizzaria.png") center/500px repeat; /* imagem centralizada, repetida e com tamanho 500px */
+  opacity: 0.04; /* deixa a imagem bem fraca (efeito marca d'água) */
   z-index: -1; /* joga para trás de todo o conteúdo */
 }
 
@@ -277,6 +277,7 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
+  margin-bottom: 50px;
 }
 .cardpizzadoce {
   /*CARD INDIVIDUAL DE CADA PIZZA*/
