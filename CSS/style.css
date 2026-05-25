@@ -35,7 +35,7 @@
   --cinza-texto: #5c5550;
 
   /* Sombra padrão para cards e caixas importantes. */
-  --sombra: 0 14px 35px rgba(35, 31, 32, 0.14);gi
+  --sombra: 0 14px 35px rgba(35, 31, 32, 0.14);
 
   /* Largura máxima do conteúdo para o site não ficar muito espalhado em telas grandes. */
   --largura-container: 1120px;
