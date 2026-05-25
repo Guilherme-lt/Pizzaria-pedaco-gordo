@@ -35,7 +35,7 @@
   --cinza-texto: #5c5550;
 
   /* Sombra padrão para cards e caixas importantes. */
-  --sombra: 0 14px 35px rgba(35, 31, 32, 0.14);
+  --sombra: 0 14px 35px rgba(35, 31, 32, 0.14);gi
 
   /* Largura máxima do conteúdo para o site não ficar muito espalhado em telas grandes. */
   --largura-container: 1120px;
@@ -186,11 +186,7 @@ a {
   z-index: 1;
   transform: translatex(150px);
 }
-.fundoiconedepizza {
-  width: 300px;
-  max-width: 100%;
-  transform: translatex(400px);
-}
+
 .segundadiv {
   color: var(--branco);
   background: linear-gradient(#4a0000 70%, transparent);
@@ -214,7 +210,7 @@ a {
   margin-bottom: 50px;
   box-shadow: 30px 30px 30px black;
 }
-.iconeEstilização2{
+.iconeEstilizacao2{
   width: 300px;
   max-width: 100%;
   transform: translate(-720px, -400px) scaleX(-1);
@@ -333,17 +329,8 @@ a {
 }
 
 .mapa-container iframe {
-  /* Largura do mapa */
-  width: 80%;
-
-  /* Altura do mapa */
-  height: 350px;
-
-  /* Borda simples */
-  border: 3px solid #911c03;
-
-  /* Arredonda as pontas */
-  border-radius: 10px;
+  width: 100%;
+  height: 500px;
 }
 
 /*Style Rodapé do site*/
@@ -422,12 +409,6 @@ a {
   /* Cor dos links quando passa o mouse. */
   color: #f7c948;
 }
-
-.rodape-email {
-  /* Espaço acima e abaixo do email. */
-  margin: 20px 0;
-}
-
 .rodape-copy {
   /* Tamanho do texto dos direitos reservados. */
   font-size: 14px;
