@@ -1,0 +1,158 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cardapio | Big Fat Slice</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="CSS/responsivo.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="icon" href="imagens/logos/iconedatab.png" type="image/x-icon" />
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <header class="cabecalho-fixo">
+    <div class="conteudo-cabecalho container">
+      <a class="link-logo" href="index.html" aria-label="Voltar para a pagina inicial">
+        <img class="imagem-logo" src="imagens/logos/big fat slice readonly.png" alt="Big Fat Slice" />
+      </a>
+
+      <nav class="menu-navegacao" aria-label="Menu principal">
+        <a href="index.html">Incio</a>
+        <a class="link-atual" href="#">Cardapio</a>
+        <a href="index.html#secao-localizacao">Localização</a>
+      </nav>
+
+      <button class="botao-menu-mobile" aria-label="Abrir menu" aria-expanded="false">Menu</button>
+
+      <button class="botao-carrinho" onclick="abrirCarrinho()" aria-label="Abrir carrinho de compras">
+        Carrinho
+        <span class="quantidade-carrinho"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="introducao-cardapio container">
+      <div class="titulo-secao">
+        <span>Descubra nossos sabores</span>
+        <h2>Cardapio</h2>
+      </div>
+      <p>Encontre a pizza perfeita entre salgadas, doces e ofertas especiais. Use a busca para achar o sabor que voce quer.</p>
+      <div class="area-busca">
+        <input class="campo-busca" type="text" placeholder="Buscar pizza..." oninput="buscarPizza()" />
+      </div>
+    </section>
+
+    <section class="secao-pizzas-salgadas container" id="salgadas">
+      <div class="titulo-secao">
+        <span>Mais pedidas</span>
+        <h2>Pizzas salgadas</h2>
+      </div>
+      <div class="grade-pizzas">
+        <article class="card-pizza">
+          <img src="imagens/menu/pizza calabresa.png" alt="Pizza Calabresa" />
+          <h3>Calabresa Big</h3>
+          <p>Calabresa, cebola e muita mussarela com nosso molho especial.</p>
+          <strong>R$ 39,90</strong>
+          <button class="botao botao-adicionar" onclick="adicionarAoCarrinho('Calabresa Big', 'R$ 39,90')">Adicionar</button>
+        </article>
+        <article class="card-pizza">
+          <img src="imagens/menu/pizza frango com catupiry.png" alt="Pizza Frango com Catupiry" />
+          <h3>Frango com Catupiry</h3>
+          <p>Frango desfiado, catupiry cremoso e milho para um sabor classico.</p>
+          <strong>R$ 49,90</strong>
+          <button class="botao botao-adicionar" onclick="adicionarAoCarrinho('Frango com Catupiry', 'R$ 49,90')">Adicionar</button>
+        </article>
+        <article class="card-pizza">
+          <img src="imagens/menu/pizza 4 queijos.png" alt="Pizza Quatro Queijos" />
+          <h3>Quatro Queijos</h3>
+          <p>Combinacao intensa de quatro queijos com queijo extra por cima.</p>
+          <strong>R$ 49,90</strong>
+          <button class="botao botao-adicionar" onclick="adicionarAoCarrinho('Quatro Queijos', 'R$ 49,90')">Adicionar</button>
+        </article>
+        <article class="card-pizza">
+          <img src="imagens/menu/pizza calabresa.png" alt="Pizza Pepperoni" />
+          <h3>Pepperoni Supreme</h3>
+          <p>Pepperoni crocante, queijo e toque de oregano para quem quer sabor forte.</p>
+          <strong>R$ 39,90</strong>
+          <button class="botao botao-adicionar" onclick="adicionarAoCarrinho('Pepperoni Supreme', 'R$ 39,90')">Adicionar</button>
+        </article>
+        <article class="card-pizza">
+          <img src="imagens/menu/pizza portuguesa.png" alt="Pizza Portuguesa" />
+          <h3>Portuguesa</h3>
+          <p>Presunto, calabresa, ovo, cebola e azeitonas em equilibrio perfeito.</p>
+          <strong>R$ 49,90</strong>
+          <button class="botao botao-adicionar" onclick="adicionarAoCarrinho('Portuguesa', 'R$ 49,90')">Adicionar</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao-pizzas-doces container" id="doces">
+      <div class="titulo-secao">
+        <span>Depois da refeicao</span>
+        <h2>Pizzas doces</h2>
+      </div>
+      <div class="grade-pizzas">
+        <article class="card-pizza">
+          <img src="imagens/menu/pizza chocolate com morango.png" alt="Pizza Chocolate com Morango" />
+          <h3>Chocolate com Morango</h3>
+          <p>Pizza doce coberta com chocolate derretido e morangos frescos.</p>
+          <strong>R$ 59,90</strong>
+          <button class="botao botao-adicionar" onclick="adicionarAoCarrinho('Chocolate com Morango', 'R$ 59,90')">Adicionar</button>
+        </article>
+        <article class="card-pizza">
+          <img src="imagens/menu/pizza de kitkat.png" alt="Pizza KitKat" />
+          <h3>KitKat</h3>
+          <p>Recheio cremoso de chocolate com pedacos crocantes de KitKat.</p>
+          <strong>R$ 59,90</strong>
+          <button class="botao botao-adicionar" onclick="adicionarAoCarrinho('KitKat', 'R$ 59,90')">Adicionar</button>
+        </article>
+        <article class="card-pizza">
+          <img src="imagens/menu/pizza de banana nevada.png" alt="Pizza Banana Nevada" />
+          <h3>Banana Nevada</h3>
+          <p>Banana caramelizada, canela e toque de chocolate branco.</p>
+          <strong>R$ 59,90</strong>
+          <button class="botao botao-adicionar" onclick="adicionarAoCarrinho('Banana Nevada', 'R$ 59,90')">Adicionar</button>
+        </article>
+        <article class="card-pizza">
+          <img src="imagens/menu/pizza de prestÃ­gio.png" alt="Pizza Prestigio" />
+          <h3>Prestigio</h3>
+          <p>Chocolate, coco e muito sabor para os fes de classico doce brasileiro.</p>
+          <strong>R$ 59,90</strong>
+          <button class="botao botao-adicionar" onclick="adicionarAoCarrinho('Prestigio', 'R$ 59,90')">Adicionar</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape-site">
+    <div class="container conteudo-rodape">
+      <img src="imagens/logos/logo branca da pizzaria.png" alt="Logo branca da Big Fat Slice" />
+      <div>
+        <h2>Sobre nos</h2>
+        <p>Somos uma pizzaria feita para quem ama fatias grandes, muito queijo e sabores marcantes em um ambiente simples e acolhedor.</p>
+      </div>
+      <b>(c) Todos os direitos reservados</b>
+    </div>
+  </footer>
+
+  <div class="fundo-modal-carrinho" aria-hidden="true">
+    <div class="caixa-carrinho">
+      <div class="cabecalho-carrinho">
+        <h2>Seu Carrinho</h2>
+        <button class="botao-fechar-carrinho" onclick="fecharCarrinho()" aria-label="Fechar carrinho">X</button>
+      </div>
+      <div class="lista-carrinho"></div>
+      <div class="rodape-carrinho">
+        <div class="total-carrinho">Total: R$ 0,00</div>
+        <button class="botao-finalizar" onclick="finalizarCompra()">Fazer pedido no WhatsApp</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
